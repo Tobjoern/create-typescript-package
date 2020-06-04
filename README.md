@@ -29,6 +29,8 @@ rm -rf ./.git
 #remove README.md
 unlink README.md
 
+npm i
+
 code .
 ```
 
