@@ -16,4 +16,20 @@ To publish your package privately, use a scoped package name, <npm username>/<li
 
 For more information regarding private packages check out https://www.youtube.com/watch?v=O6JoXGnHK_Y.
 
+I also recommend creating the following script in /usr/local/bin/create-typescript-package:
+
+```
+#!/bin/bash
+git clone git@github.com:Tobjoern/typescript-npm-module.git $1
+cd ./$1
+
+#remove git repository
+rm -rf ./.git
+
+#remove README.md
+unlink README.md
+
+code .
+```
+
 Regards!
